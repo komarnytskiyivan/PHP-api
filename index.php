@@ -10,53 +10,53 @@
 <body>
    <div class = "header"> <div class = "title container-title"> <h1>Pokedex</h1> </div></div>
    <div class="container mt-5">
-      <div class="row post-list">
+      <div class="row post-list content">
       </div>
-      <!-- <div id="loadMore">
-      <a href="#">Load More</a>
-      </div> -->
+      <div id="loadMore" class="btn btn-primary btn-block">
+      Load More
+      </div>
       <div class="row post-list info">
          <div class="card info-card" style='width: 18rem;'>
             <div class="card-body">
-            <img class="card-img" src="https://cdn.mos.cms.futurecdn.net/duFNXTrRmmyhqHPC88gS2V-1200-80.jpg"></img>
-            <h5 class="card-title">Hello, world!</h5>
+            <img class="card-img card-info-img" src=""></img>
+            <h5 class="card-title card-info-title"></h5>
             <p class="card-text">
                <table class="table-inform" border="1">
                   <tr>
                      <th>Type</th>
-                     <th>Poison</th>
+                     <th class="types"></th>
                   </tr>
                   <tr>
                      <td>Attack</td>
-                     <td>13</td>
+                     <td class="attack"></td>
                   </tr>
                   <tr>
                      <td>Defense</td>
-                     <td>13</td>
+                     <td class="defense"></td>
                   </tr>
                   <tr>
                      <td>HP</td>
-                     <td>13</td>
+                     <td class="hp"></td>
                   </tr>
                   <tr>
                      <td>SP Attack</td>
-                     <td>13</td>
+                     <td class="spattack"></td>
                   </tr>
                   <tr>
                      <td>SP Defence</td>
-                     <td>13</td>
+                     <td class="spdefense"></td>
                   </tr>
                   <tr>
                      <td>Speed</td>
-                     <td>13</td>
+                     <td class="speed"></td>
                   </tr>
                   <tr>
                      <td>Weight</td>
-                     <td>13</td>
+                     <td class="weight"></td>
                   </tr>
                   <tr>
                      <td>Total moves</td>
-                     <td>13</td>
+                     <td class="totalmoves"></td>
                   </tr>
                </table></p>
             </div>
@@ -64,6 +64,5 @@
       </div>
    </div>
    <script async src="./main.js"></script>
-   <script defer src="./styling.js"></script>
 </body>
 </html>

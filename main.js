@@ -13,11 +13,9 @@ function getPokemons(limit = 6,limitPrev = 0) {
       let data = result;
       for (let i = limitPrev; i < limit; i++) {
         let element = data.results[i];
-        console.log(element);
         await createElement(element);
       }
       let cards = document.querySelectorAll('.card-list');
-      console.log(cards);
       setInfoElement('https://pokeapi.co/api/v1/pokemon/1')
       cards.forEach(card => {card.addEventListener('click', (e) => {
           e.preventDefault();
@@ -104,7 +102,6 @@ function setInnerInfoHtml(name, types, img, id, stats, weight, moves){
   let cardSpeed = document.querySelector('.speed');
   let cardWeight = document.querySelector('.weight');
   let cardTotalMoves = document.querySelector('.totalmoves');
-  console.log(cardInfoTitle);
   cardInfoImg.src = `${img}`;
   cardTypes.textContent = '';
   for(let i = 0; i < types.length; i++){
@@ -123,7 +120,6 @@ function setInnerInfoHtml(name, types, img, id, stats, weight, moves){
 document.querySelector('#loadMore').addEventListener('click', () => {
   limitPrev = limit;
   limit += 6;
-  console.log(limit);
   getPokemons(limit,limitPrev);
 })
 getPokemons(6,0);

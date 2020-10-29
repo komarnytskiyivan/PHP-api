@@ -15,7 +15,8 @@
       <div id="loadMore" class="btn btn-primary btn-block">
       Load More
       </div>
-      <div class="row post-list info">
+   </div>
+   <div class="row post-list info sidebar">
          <div class="card info-card" style='width: 18rem;'>
             <div class="card-body">
             <img class="card-img card-info-img" src=""></img>
@@ -62,7 +63,6 @@
             </div>
          </div>
       </div>
-   </div>
    <script async src="./main.js"></script>
 </body>
 </html>

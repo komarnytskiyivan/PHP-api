@@ -15,11 +15,6 @@
   top: 10px;
   z-index: 999;
 }
-#loadMore{
-    max-width: 800px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 .container-title {
     z-index: 1;
     width: 100%;
@@ -30,23 +25,21 @@
     padding-left: 50px;
     border: 2px solid black;
 }
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+.info{
     position: fixed;
-    height: 100%;
-    overflow: auto;
+    top: 50%;
+    margin-top: -200px;
+    right: 0;
+    width: 30%;
 }
-@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    div.content {margin-left: 0;}
-  }
+.info-card{
+    position: relative;
+    width: 624px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 395px;
+    border: 1px solid #000000;
+}
 .show{
     display: block;
 }
@@ -56,6 +49,15 @@
 .table-inform{
     width: 100%;
     border: 1px solid black;
+}
+#loadMore{
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 800px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: blue;
 }
 .card-text{
     display: inline-block;
